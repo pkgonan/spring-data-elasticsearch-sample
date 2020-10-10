@@ -1,4 +1,4 @@
-package io.pkgonan.sample
+package io.pkgonan.elasticsearch.example
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
