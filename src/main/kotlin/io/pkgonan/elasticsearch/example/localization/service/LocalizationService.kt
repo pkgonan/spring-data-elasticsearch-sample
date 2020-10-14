@@ -1,6 +1,5 @@
 package io.pkgonan.elasticsearch.example.localization.service
 
-import io.pkgonan.elasticsearch.example.abusereport.domain.AbuseReport
 import io.pkgonan.elasticsearch.example.localization.domain.Localization
 import io.pkgonan.elasticsearch.example.localization.domain.LocalizationRepository
 import org.elasticsearch.ElasticsearchStatusException
@@ -33,7 +32,7 @@ class LocalizationService(
             if (RestStatus.BAD_REQUEST == cause.status()) {
                 // TODO : Throw Business Exception
             }
+            throw e
         }
-        return Page.empty()
     }
 }
